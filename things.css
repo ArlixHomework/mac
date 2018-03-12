@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100;
+  height: 100%;
+  font-family: 'San Francisco', 'Source Sans Pro', 'Helvetica', sans-serif;
+  background-image: url(purple.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+}
+.busy {
+  cursor: wait !important;
+}
+#menubar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(240, 240, 240, 0.9);
+  color: #111;
+}
+#menubar a {
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: default;
+}
+#menubar a:hover {
+  background: -moz-linear-gradient(top, #7391f5 0%, #2356ec 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7391f5 0%,#2356ec 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7391f5 0%,#2356ec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #fff;
+}
+#menubar input {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  cursor: default;
+}
+#menubar input:focus {
+  outline: none;
+}
+#menubar input:hover {
+  color: #fff;
+}
+
+#dock {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 70px;
+  width: 100%;
+  background-image: url('dock.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  vertical-align: top;
+  font-size: 2.9em;
+}
+#dock i {
+  transition: all 0.25s;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  text-shadow: 1.5px 1.5px #fff;
+}
+#dock i:nth-last-child(2) {
+  margin-left: 25px;
+}
+#dock i:hover {
+ font-size: 1.1em;
+}

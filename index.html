@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="things.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="apple.png" type="image/png" rel="shortcut icon">
+    <title>macOS</title>
+  </head>
+  <body>
+    <div id="menubar">
+    <span style="float:left;" id="menubarleft">
+      <a><i class="fa fa-apple"></i></a>
+      <a style="font-weight: bold;">Finder</a>
+      <a>File</a>
+      <a>Edit</a>
+      <a>View</a>
+      <a>Go</a>
+      <a>Window</a>
+      <a>Help</a>
+    </span>
+    <span style="float:right;" id="menubarright">
+      <a><i class="fa fa-wifi fa-fw"></i></a>
+      <a><i class="fa fa-volume-up fa-fw"></i></a>
+
+      <a><i class="fa fa-battery-three-quarters fa-fw"></i> (74%)</a>
+
+      <a>Mon 22:40</a>
+      <a><input type="text" value="Guest" onkeypress="this.style.width = ((this.value.length + 1.25) * 8) + 'px';"></input></a>
+      <a><i class="fa fa-search fa-fw"></i></a>
+    </span>
+  </div>
+
+  <div id="dock">
+    <i class="fa fa-folder-open fa-fw" style="color: rgb(193, 203, 235);" title="Finder"></i>
+    <i class="fa fa-rocket fa-fw" style="color: rgb(64, 69, 72);" title="Launchpad"></i>
+    <i class="fa fa-envelope fa-fw" style="color: rgb(84, 115, 211);" title="Mail"></i>
+    <i class="fa fa-globe fa-fw" style="color: rgb(3, 164, 201);" title="Internet"></i>
+    <i class="fa fa-comments fa-fw" style="color: rgb(116, 245, 99);" title="Messages"></i>
+    <i class="fa fa-address-book fa-fw" style="color: rgb(171, 122, 63);" title="Contacts"></i>
+    <i class="fa fa-calendar fa-fw" style="color: rgb(246, 64, 61);" title="Calendar"></i>
+    <i class="fa fa-music fa-fw" style="color: rgb(68, 151, 245);" title="iTunes"></i>
+    <i class="fa fa-cogs fa-fw" style="color: rgb(58, 58, 59);" title="Settings"></i>
+    <i class="fa fa-trash fa-fw" style="color: rgb(193, 194, 188);" title="Trash"></i>
+    <a href="https://github.com/mrDnomaid/mac#mac" target="_blank"><i class="fa fa-question fa-fw" style="color: rgb(58, 58, 59);" title="What is this?"></i></a>
+  </div>
+
+  <audio src="chime.mp3" autoplay></audio>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>
